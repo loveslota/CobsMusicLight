@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Cob's Soul Music</title>
+</head>
+<body>
+    <div class="col-1" style="padding:1em;">
+        <nav>
+            <label>Decade
+                <select id="decade" name="decade">
+                    <option value="" selected="selected">Select One</option>
+                    <option value="fifties">50's</option>
+                    <option value="sixties">60's</option>
+                    <option value="seventies">70's</option>
+                    <option value="eighties">80's</option>
+                    <option value="nineties">90's</option>
+                    <option value="twothousands">2000's</option>
+                    <option value="modern">2010's</option>
+                </select>
+            </label>
+            <br />
+            <br/>
+            <label>Lorem
+                <select id="lor" name="em">
+                    <option value="" selected="selected"></option>
+                    <option value="lorem">lorem</option>
+                </select>
+            </label>
+            <br/>
+            <br/>
+            <label>Ipsum
+                <select id="ips" name="um">
+                    <option value="" selected="selected"></option>
+                    <option value="ipsum">ipsum</option>
+                </select>
+            </label>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <p>Sponsored by:</p>
+            <h5>Cereal Flakes, "Asbestos Free"</h5>
+            <h5>Jim's Brake Pads</h5>
+            <a href="http://www.dolekemp96.org/agenda/issues/internet.htm">
+                <img src="dolekemp.gif" alt="dolekemp ad" style="max-width:85%;">
+            </a>
+            
+        </nav>
+    </div>
+
+    <div class="col-2">
+
+        <header class="box">Cob's Soul Music</header>
+
+        <nav class="main-nav">
+            <ul>
+                <li style="margin-right:1em;">Home</li>
+                <li style="margin-right:1em;">Music</li>
+                <li style="margin-right:1em;">Account</li>
+                <li style="margin-right:1em;">Help Center</li>
+            </ul>
+            <form>
+                <div class="dropdown">
+                    <span>My Favorites</span>
+                    <div class="dropdown-content">
+                        <p>Song 1</p>
+                        <p>Song 2</p>
+                        <p>Song 3</p>
+                    </div>
+                </div>
+            </form>
+        </nav>
+
+        <main class="content">
+            <article class="card">
+                <img src="signed-sealed.jpg" alt="Stevie Wonder">
+                <div class="text">
+                    <h3>Song one</h3>
+                    <p>Off Low White Designer</p>
+                    <button>
+                        <a href="D7lKC3r35PkP.128.mp3">Play</a>
+                    </button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="signed-sealed.jpg" alt="Stevie Wonder">
+                <div class="text">
+                    <h3>Song one</h3>
+                    <p>Off Low White Designer</p>
+                    <button><a href="Future - Selfish (Lost Version).mp3">Play</a></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="signed-sealed.jpg" alt="Stevie Wonder">
+                <div class="text">
+                    <h3>Song one</h3>
+                    <p>Off Low White Designer</p>
+                    <button><a href="APE_FREESTYLE_COMP_IDEA.mp3">Play</a></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="signed-sealed.jpg" alt="Stevie Wonder">
+                <div class="text">
+                    <h3>Song one</h3>
+                    <p>Off Low White Designer</p>
+                    <button><a href="Future - Be Incouraged idea.01_02.mp3">Play</a></button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="signed-sealed.jpg" alt="Stevie Wonder">
+                <div class="text">
+                    <h3>Song one</h3>
+                    <p>Off Low White Designer</p>
+                    <button id="play"><a href="Future - Diamonds Dancing (Original Version).mp3">Play</a></button>
+                </div>
+            </article>
+
+        </main>
+        <article class="card">
+            <div class="text" style="text-align:center;">
+                <h3 style="text-align:center;">
+                    <audio id="sound" src="D7lKC3r35PkP.128.mp3" controls>
+                        <embed
+                            src="D7lKC3r35PkP.128.mp3"
+                            width="300"
+                            height="90"
+                            loop="false"
+                            autostart="false">
+                    </audio>
+                </h3>
+                <div class="details">
+                    <div class="now-playing">PLAYING</div>
+                    <div class="cover-art"><img src="signed-sealed.jpg"></div>
+                    <div class="song-name">Signed, Sealed, Delivered</div>
+                    <div class="song-artist">Stevie Wonder</div>
+                </div>
+                
+                <button style="width:50%;">Add to Favorites</button>
+                <br/>
+                <br/>
+                <button style="width:50%;">Share</button>
+                
+            </div>
+        </article>
+
+        <footer class="footbox" style="font-size:x-small;color:darkgray;">
+            <p>Cob's Soul Music</p>
+            <p>Cob's, LLC.</p>
+            <p>1234 Main St.</p>
+            <p>New York, NY, 12345</p>
+        </footer>
+    </div>
+
+    <script>
+        var songPlay = document.getElementById("sound");
+        var nowPlaying = document.getElementById("play"); 
+    </script>
+</body>
+</html>
